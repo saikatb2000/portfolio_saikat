@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Certificates | Saikat Bhattacharjee</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f3f4f6, #e2e8f0);
+      color: #333;
+    }
+
+    .certificates-section {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .certificates-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #111;
+    }
+
+    .carousel {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      background-color: #fff;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 1rem;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .slide p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .skills-line {
+      font-size: 0.95rem;
+      margin-top: 0.3rem;
+      color: #555;
+    }
+
+    .view-link {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 8px 16px;
+      background-color: #2d2d2d;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .view-link:hover {
+      background-color: #444;
+    }
+
+    .nav-buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .nav-buttons button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #444;
+    }
+
+    .back-button {
+      margin-top: 2rem;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: black;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #4b4b4b;
+    }
+
+    @media (max-width: 600px) {
+      .slide img {
+        height: 220px;
+      }
+
+      .certificates-section h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="certificates-section">
+    <h1>My Certificates</h1>
+
+    <div class="carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="slide">
+          <img src="./assets/IBM_certificate.jpeg" alt="Certificate 1">
+          <p>Business Analytics & Data Science - IBM</p>
+          <p class="skills-line"><strong>Skills:</strong> Business intelligence, Python programming, cognitive decision systems, predictive modeling, dimensionality reduction, data analysis, big data, machine learning, SQL, planning analytics.</p>
+          <a class="view-link" href="https://bibs.skillsnetwork.site/certificates/61baee63-a7a5-4cbb-bde5-b3d66d448b99" target="_blank">View Certificate</a>
+        </div>
+        <div class="slide">
+          <img src="./assets/ml_IIT.png" alt="Certificate 2">
+          <p>Machine Learning - IIT Kanpur</p>
+          <p class="skills-line"><strong>Skills:</strong> Supervised Learning, Regression, Model Evaluation</p>
+          <a class="view-link" href="https://verify.eicta.digitalcredentials.in/974732a2-e6ff-435b-8211-908cfab2ba1c" target="_blank">View Certificate</a>
+        </div>
+        <div class="slide">
+          <img src="./assets//advance_excel_tableau.png" alt="Certificate 3">
+          <p>Advance Excel with Tableau - IIT Kanpur</p>
+          <p class="skills-line"><strong>Skills:</strong> Lookup, Power Query, Tableau, Charts, Filters, Dashboard Design</p>
+          <a class="view-link" href="https://verify.eicta.digitalcredentials.in/354f1538-9ee2-423d-9523-d0b9bcecc016?utm_source=direct_link&utm_medium=portal" target="_blank">View Certificate</a>
+        </div>
+        <div class="slide">
+          <img src="./assets/digital_marketing.png" alt="Certificate 4">
+          <p>Digital Marketing</p>
+          <p class="skills-line"><strong>Skills:</strong> Digital marketing, SEO, Google Ads, social media marketing, email marketing, content marketing, analytics, conversion optimization.</p>
+          <a class="view-link" href="https://udemy-certificate.s3.amazonaws.com/image/UC-c70c0c13-db9d-45df-bb20-429d0bceb6fb.jpg" target="_blank">View Certificate</a>
+        </div>
+        <div class="slide">
+          <img src="./assets/digital_marketing.png" alt="Certificate 5">
+          <p>Python for Social Media Analytics</p>
+          <p class="skills-line"><strong>Skills:</strong> Python programming, social media analytics, data extraction, sentiment analysis, data visualization.</p>
+          <a class="view-link" href="https://udemy-certificate.s3.amazonaws.com/image/UC-86e71566-94b6-45f2-8ac2-56e48545683a.jpg" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-buttons">
+      <button onclick="prevSlide()">← Prev</button>
+      <button onclick="nextSlide()">Next →</button>
+    </div>
+
+    <a href="index.html" class="back-button">← Back to Home</a>
+  </section>
+
+  <script>
+    const track = document.getElementById('carouselTrack');
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const slideWidth = slides[0].offsetWidth;
+      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel();
+    }
+
+    window.addEventListener('resize', updateCarousel);
+  </script>
+</body>
+</html>
